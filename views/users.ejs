@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+
+<h1><%= title %></h1>
+
+<table class="table table-striped table-hover">
+    <tr><th>User ID</th><th>Username</th>
+    </tr>
+    <% for (var i = 0; i < account.length; i++) { %>
+        <tr>  
+            <td><%= account[i]._id %></td>
+            <td><%= account[i].username %></td>
+        </tr>
+    <% } %>
+
+</table>
+
+<% include ./partials/footer.ejs %>
